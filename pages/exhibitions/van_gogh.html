@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ART station</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <button class="brg"><span></span></button>
+  <div class="brg-mat"></div>
+  <header class="header">
+    <nav class="header__menu menu">
+      <a href="/index.html" class="menu__main-link"><img src="/img/LOGO.svg" alt=""></a>
+      <ul class="menu__list">
+        <li class="menu__item"><a href="/pages/contacts.html" class="menu__link grid-3__link">
+            <span>contacts</span><img src="/img/arrow-right.svg" alt="">
+          </a></li>
+        <li class="menu__item"><a href="/pages/about.html" class="menu__link grid-3__link">
+            <span>about</span><img src="/img/arrow-right.svg" alt="">
+          </a></li>
+        <li class="menu__item"><a href="/pages/exhibitions.html" class="menu__link grid-3__link">
+            <span>exhibitions</span><img src="/img/arrow-right.svg" alt="">
+          </a></li>
+        <li class="menu__item"><a href="/pages/lectures.html" class="menu__link grid-3__link">
+            <span>lectures</span><img src="/img/arrow-right.svg" alt="">
+          </a></li>
+      </ul>
+      <ul class="menu__social social">
+        <li class="social__item"><a href="https://twitter.com/" target="_blank" class="social__link icon-twitter"></a>
+        </li>
+        <li class="social__item"><a href="https://www.instagram.com/" target="_blank"
+            class="social__link icon-instagram"></a></li>
+        <li class="social__item"><a href="https://www.tiktok.com/" target="_blank" class="social__link icon-tiktok"></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="exhibition grid-3">
+    <header class="exhibition__header">
+      <h2 class="exhibition__title">Van Gogh. Letters to Theo</h2>
+      <img src="/img/van_gogh.jpg" alt="" class="exhibition__img">
+    </header>
+    <p class="exhibition__date">5 JUNE - 10 SEPTEMBER</p>
+    <div class="exhibition__wrapper">
+      <div class="exhibition__text">
+        <p>Van Gogh is one of the most popular artists in the world. During his short creative
+          life, the master has created more than 2,000 works, including 930 paintings, 1,100 drawings and sketches. His
+          creations are traditionally the most expensive and desirable lots in any auction.</p>
+        <p>Created especially for the Van Gogh Year, an updated version of the Van Gogh Alive
+          exhibition gives a new glance on the tragic life and the magnificent work of the artist. 400 most iconic
+          paintings by Van Gogh, great classical music, the huge screens on the total exhibition area of over 2,000
+          square
+          meters will undoubtedly make a lasting impression on the audience.</p>
+      </div>
+      <div class="exhibition__photo swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="/img/van_gogh/van_gogh_1.jpg" alt="exhibition photo"></div>
+          <div class="swiper-slide"><img src="/img/van_gogh/van_gogh_2.jpg" alt="exhibition photo"></div>
+          <div class="swiper-slide"><img src="/img/van_gogh/van_gogh_3.jpg" alt="exhibition photo"></div>
+        </div>
+        <div class="swiper-button-prev">&lt;</div>
+        <div class="swiper-button-next">&gt;</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="subscribe grid-3">
+    <div class="subscribe__wrapper">
+      <h2 class="subscribe__title">stay in the know!</h2>
+      <ul class="subscribe__social social">
+        <li class="social__item"><a href="https://twitter.com/" target="_blank" class="social__link icon-twitter"></a>
+        </li>
+        <li class="social__item"><a href="https://www.instagram.com/" target="_blank"
+            class="social__link icon-instagram"></a></li>
+        <li class="social__item"><a href="https://www.tiktok.com/" target="_blank" class="social__link icon-tiktok"></a>
+        </li>
+      </ul>
+    </div>
+    <ul class="subscribe__benefits benefits">
+      <li class="benefits__item">find out about new exhibitions</li>
+      <li class="benefits__item">do not miss the entertaining lectures</li>
+      <li class="benefits__item">follow the life of the museum</li>
+      <li class="benefits__item">and other useful information</li>
+    </ul>
+    <form class="subscribe__form form">
+      <div class="form__item">
+        <label for="name" class="form__label">Name</label>
+        <input id="name" type="text" name="name" class="form__input" required>
+      </div>
+      <div class="form__item">
+        <label for="email" class="form__label">Email</label>
+        <input id="email" type="email" name="email" class="form__input" required>
+      </div>
+      <button type="submit" class="form__btn">subscribe</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <nav class="footer__nav nav-f">
+      <ul class="nav-f__list">
+        <li class="nav-f__item"><a href="/pages/contacts.html" class="nav-f__link grid-3__link">
+            <span>contacts</span><img src="/img/arrow-right.svg" alt="">
+          </a></li>
+        <li class="nav-f__item"><a href="/pages/about.html" class="nav-f__link grid-3__link">
+            <span>about</span><img src="/img/arrow-right.svg" alt="">
+          </a></li>
+        <li class="nav-f__item"><a href="/pages/exhibitions.html" class="nav-f__link grid-3__link">
+            <span>exhibitions</span><img src="/img/arrow-right.svg" alt="">
+          </a></li>
+        <li class="nav-f__item"><a href="/pages/lectures.html" class="nav-f__link grid-3__link">
+            <span>lectures</span><img src="/img/arrow-right.svg" alt="">
+          </a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="/js/script.js"></script>
+  <script src="/js/swiper.js"></script>
+</body>
+
+</html>
