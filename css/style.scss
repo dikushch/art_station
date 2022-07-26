@@ -1020,6 +1020,7 @@ a {
 
 .lectures-page {
   margin-top: 100px;
+
   @media (max-width: 768px) {
     margin-top: 50px;
   }
@@ -1029,6 +1030,15 @@ a {
 
   &__item {
     grid-column: span 3;
+    &:hover {
+      .lectures-page__name img {
+        transition: transform 0.4s ease;
+        transform: scale(1.1);
+      }
+      .lectures-page__name h3 {
+        text-decoration: underline;
+      }
+    }
     @media (max-width: 768px) {
       &.grid-3 {
         row-gap: 0;
@@ -1097,6 +1107,7 @@ a {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      transition: transform 0.4s ease;
     }
   }
 }
@@ -1205,5 +1216,103 @@ a {
   font-size: 4rem;
   &::after {
     display: none;
+  }
+}
+
+// ##############################
+// ##############################
+// ##############################
+// ##############################
+// ##############################
+
+.lecture {
+  &__header {
+    position: relative;
+    grid-column: span 3;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 768x) {
+      height: 300px;
+    }
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(#000, 0.3);
+    }
+  }
+
+  &__title {
+    position: relative;
+    z-index: 5;
+    padding: 20px;
+    font-size: 2.5rem;
+    @media (max-width: 768x) {
+      font-size: 2rem;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__info {
+    background-color: var(--color-w);
+    color: var(--color-b);
+    font-size: 2.5rem;
+    padding-left: 40px;
+    @media (max-width: 768px) {
+      padding: 0 20px;
+      font-size: 2rem;
+      grid-column: span 3;
+    }
+  }
+
+  &__time {
+    span {
+      margin-bottom: 40px;
+      display: block;
+      font-size: 2rem;
+      @media (max-width: 768px) {
+        display: inline-block;
+        padding-left: 20px;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  &__speaker {
+    span {
+      display: block;
+      font-size: 2rem;
+      @media (max-width: 768px) {
+        display: inline-block;
+        padding-right: 20px;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  &__text {
+    grid-column: span 2;
+    max-width: 600px;
+    @media (max-width: 768px) {
+      grid-column: span 3;
+      padding: 20px;
+    }
   }
 }
